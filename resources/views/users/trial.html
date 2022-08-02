@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js" integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.esm.js" integrity="sha512-ed7vUABA1bHD/KxuT8QuoEujQh54YD1K9JqVQznmCysUHCqws1onhPmp2BeZmMBO8Z7Ej3jQhZCnZqbAbbXGng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.esm.min.js" integrity="sha512-YddsjqDwjknf6zcj3q5HNwBjL1PNAK+il95CpN5Y/Vlugdc/laK6vdnQt1aGTj8/xwvW3Sss3yZAnsltzt6lUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js" integrity="sha512-/MqITtqQfmjLnDtBC8yxrsERbn3dvqyxtc1B/3x57xp+J3srVBcgyr9VXgDj8BYScxSJ9MauIMY7F9Fr2TJHkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/helpers.esm.js" integrity="sha512-J4vecZHtIp+6W2R49ZiYw/4uoynlgkzXHRd8nXMqbxP8aIwt3iQDTn1HV83PLo7vJ/tSYTG7Lki1rry/4GmZpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/helpers.esm.min.js" integrity="sha512-gpjTYwezklFWasKVajjiPstSIESEHV3p0QK5/blAsx4xSU7wK2MAqU5klhZ+xIoZZnf8qHTgVUAI5uOKo70lLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+const ctx = document.getElementById('myChart');
+const myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Red', 'Blue'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+
+</body>
+</html>
