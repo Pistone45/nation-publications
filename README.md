@@ -59,3 +59,5 @@ The following are the default credentials present by default:
 ***The password for all default users is `pistone45`***
 * pistonsanjama45@gmail.com `Customer`
 * pistonsanjama45@yahoo.com `Admin`
+* james@gmail.com `Customer`
+* joseph@gmail.com `Customer`
