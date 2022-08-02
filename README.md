@@ -41,6 +41,7 @@ git clone https://github.com/Pistone45/nation-publications.git
 * Install Composer by visiting this link and downloading the installer or use NPM (https://getcomposer.org/download/).
 * Run composer through command prompt by typing the command `composer` and then type `global require laravel/installer` to install Laravel
 * Change the Database connection settings in the `env` file present in the root folder if you are using a host with a password and a different username
+*	Navigate to the project root folder and open command prompt or navigate to the root by changing the directory. Type php artisan migrate to migrate all the tables in the      selected database
 * Navigate to the projet root folder and open a command window and type `php artisan serve` to start the server
 * Use the displayed server address in any web browser to run the project
 
